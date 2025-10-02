@@ -30,7 +30,6 @@ nav{
 
 }
 .nav-menu{
-
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -65,12 +64,14 @@ main{
 .section__slider {
     display: flex;
     flex-direction: row;
+    margin: 20px 20px 20px 20px;
+    gap:20px
 }
 .section__slide{
     border: 1px;
     border-style: dashed;
     border-color: var(--tangerine);
     padding: 5px 10px 5px 10px;
-    margin: 0 20px 10px 0;
+
 }
 
