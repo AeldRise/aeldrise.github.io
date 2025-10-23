@@ -9,14 +9,15 @@ body{
     margin: 0 0 0 0;
     font-family: "Courier New", serif;
     color:white;
+    padding: 1rem 10rem 1rem 10rem;
 }
 header{
-    margin: 0 20px 20px 0;
+    padding: 0 20px 20px 0 ;
     display: flex;
-    justify-content: right;
-    position: fixed;
-    top:0;
-    left: 0;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 50%;
     width: 100%;
     z-index: 1000;
 }
@@ -28,10 +29,11 @@ nav{
     margin: 0 20px 20px 20px ;
 }
 .nav-menu{
+    padding-inline-start: 0;
     list-style: none;
     display: flex;
-    gap: 2rem;
-    margin-right: 20px;
+    gap: 2em;
+    margin: 1rem;
 }
 .nav-menu a{
     text-decoration: none;
@@ -41,7 +43,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 100px 200px 20px 200px;
+
 }
 
 .header__title {
@@ -49,6 +51,8 @@ main{
 }
 
 .section-block{
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     padding-left: 10px;
     background-color: var(--darkjet);
@@ -69,9 +73,21 @@ main{
 }
 
 .section__slide{
+
     border: 1px;
     border-style: dashed;
     border-color: var(--tangerine);
     padding: 5px 10px 5px 10px;
+}
+@media (max-width: 1024px){
+    body {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .section__slider {
+        flex-direction: column;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+    }
 }
 
